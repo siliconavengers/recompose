@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.56",
-    "@babel/core": "^7.0.0-beta.56",
+    "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.56",
     "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.56",
     "@babel/plugin-transform-runtime": "^7.0.0-beta.56",
@@ -84,7 +84,7 @@
     "rxjs": "^5.0.0",
     "shelljs": "^0.6.0",
     "sinon": "^1.17.1",
-    "webpack": "^2.4.1",
+    "webpack": "^5.0.0",
     "xstream": "^5.0.5"
   },
   "devEngines": {
