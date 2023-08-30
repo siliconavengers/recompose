@@ -12,14 +12,18 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-motion": "^0.5.0",
-    "recompose": "^0.24.0"
+    "recompose": "^0.24.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "flow": "flow"
-  }
+    "flow": "flow",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
