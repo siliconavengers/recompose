@@ -16,7 +16,9 @@
     "postinstall": "node scripts/installNestedPackageDeps.js",
     "format": "prettier --semi false --trailing-comma es5 --single-quote --write 'scripts/*.js' 'src/packages/*/*.js' 'src/packages/*/!(node_modules)/**/*.js'",
     "precommit": "lint-staged",
-    "prepush": "yarn test"
+    "prepush": "yarn test",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "jest": {
     "testMatch": [
@@ -36,7 +38,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.56",
+    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0-beta.56",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.56",
     "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.56",
@@ -92,6 +94,8 @@
     "npm": "3.x"
   },
   "dependencies": {
-    "enzyme-adapter-react-16": "^1.1.1"
-  }
+    "enzyme-adapter-react-16": "^1.1.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
